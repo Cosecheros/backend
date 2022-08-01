@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosecheros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    html, body {
+        margin: 0px;
+        font-family: "Inter";
+        color: #103940
+    }
+    .hero {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    .bg-color {
+        background-color: #C4F7D3;
+    }
+    .btn {
+        border-radius: 2rem;
+        background-color: #5C92FF;
+        color: white;
+        border: 0px;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        outline: none;
+        font-size: large;
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: #32559B;
+    }
+    .title {
+        font-weight: 800;
+        font-size: xxx-large;
+    }
+    .input-date {
+        border: 2px solid #C4F7D3;
+        border-radius: 4px;
+        font-size: large;
+        padding: 0.5rem 0.75rem;
+        margin: 1rem
+    }
+    .input-date:focus-visible {
+        outline: none;
+        border-color: #103940;
+        border: 2px solid #103940;
+    }
+</style>
+<body class="bg-color hero">
+  <h1 class="title">Cosecheros</h1>
+  <h3 class="subtitle">Ingresar la fecha para obtener los tweets:</h3>
+  <p>Utilizar el formato <b>dd-mm-aa</b> (con los guiones incluidos)</p>
+  <form method="POST">
+    <input class="input-date" type="text" name="fecha" value="" placeholder="dd-mm-aa"/>
+    <input class="btn" type="submit">
+  </form>
+</body>
+</html>
